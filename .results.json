@@ -5,26 +5,17 @@
     "passes": 0,
     "pending": 0,
     "failures": 13,
-    "start": "2021-12-01T02:30:24.783Z",
-    "end": "2021-12-01T02:30:25.048Z",
-    "duration": 265
+    "start": "2021-12-01T02:41:39.967Z",
+    "end": "2021-12-01T02:41:40.239Z",
+    "duration": 272
   },
   "tests": [
     {
       "title": "should return a new array containing the first two drivers from the passed-in array",
       "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected 'Bob' to deeply equal [ 'Sally', 'Bob' ]",
-        "showDiff": true,
-        "actual": "Bob",
-        "expected": [
-          "Sally",
-          "Bob"
-        ],
-        "stack": "AssertionError: expected 'Bob' to deeply equal [ 'Sally', 'Bob' ]\n    at Context.<anonymous> (test/indexTest.js:10:49)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "should return an array of the last two drivers",
@@ -59,7 +50,7 @@
     {
       "title": "allows us to invoke either function from the array",
       "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:30:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -139,7 +130,7 @@
     {
       "title": "returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:76:7)\n    at processImmediate (node:internal/timers:464:21)",
@@ -152,18 +143,9 @@
     {
       "title": "should return a new array containing the first two drivers from the passed-in array",
       "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected 'Bob' to deeply equal [ 'Sally', 'Bob' ]",
-        "showDiff": true,
-        "actual": "Bob",
-        "expected": [
-          "Sally",
-          "Bob"
-        ],
-        "stack": "AssertionError: expected 'Bob' to deeply equal [ 'Sally', 'Bob' ]\n    at Context.<anonymous> (test/indexTest.js:10:49)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "should return an array of the last two drivers",
@@ -198,7 +180,7 @@
     {
       "title": "allows us to invoke either function from the array",
       "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:30:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -278,7 +260,7 @@
     {
       "title": "returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the last two drivers when passed returnLastTwoDrivers() as the second argument",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:76:7)\n    at processImmediate (node:internal/timers:464:21)",
