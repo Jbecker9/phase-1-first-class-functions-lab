@@ -10,3 +10,8 @@ const selectingDrivers = [
     returnFirstTwoDrivers,
     returnLastTwoDrivers
 ];
+
+function createFareMultiplier(fareMultiplier){
+    return fareMultiplier()
+    };
+}
