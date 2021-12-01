@@ -2,12 +2,12 @@
   "stats": {
     "suites": 8,
     "tests": 13,
-    "passes": 0,
+    "passes": 2,
     "pending": 0,
-    "failures": 13,
-    "start": "2021-12-01T02:47:00.957Z",
-    "end": "2021-12-01T02:47:01.240Z",
-    "duration": 283
+    "failures": 11,
+    "start": "2021-12-01T03:54:50.789Z",
+    "end": "2021-12-01T03:54:51.140Z",
+    "duration": 351
   },
   "tests": [
     {
@@ -15,34 +15,24 @@
       "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to deeply equal [ 'Sally', 'Bob' ]",
-        "showDiff": true,
-        "expected": [
-          "Sally",
-          "Bob"
-        ],
-        "stack": "AssertionError: expected undefined to deeply equal [ 'Sally', 'Bob' ]\n    at Context.<anonymous> (test/indexTest.js:10:49)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "should return an array of the last two drivers",
       "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: returnLastTwoDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:16:7)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "returnLastTwoDrivers is not defined"
-      }
+      "err": {}
     },
     {
       "title": "has the `returnFirstTwoDrivers` function to as its first element",
       "fullTitle": "index.js selectingDrivers has the `returnFirstTwoDrivers` function to as its first element",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:22:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "message": "expected undefined to deeply equal [Function: returnFirstTwoDrivers]",
+        "showDiff": true,
+        "stack": "AssertionError: expected undefined to deeply equal [Function: returnFirstTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:22:38)\n    at processImmediate (node:internal/timers:464:21)"
       }
     },
     {
@@ -51,8 +41,9 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:26:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "message": "expected undefined to deeply equal [Function: returnLastTwoDrivers]",
+        "showDiff": true,
+        "stack": "AssertionError: expected undefined to deeply equal [Function: returnLastTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:26:38)\n    at processImmediate (node:internal/timers:464:21)"
       }
     },
     {
@@ -61,8 +52,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:30:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "stack": "TypeError: selectingDrivers[0] is not a function\n    at Context.<anonymous> (test/indexTest.js:30:33)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "selectingDrivers[0] is not a function"
       }
     },
     {
@@ -108,7 +99,7 @@
     {
       "title": "is a function",
       "fullTitle": "index.js fareTripler() is a function",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: fareTripler is not defined\n    at Context.<anonymous> (test/indexTest.js:62:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -128,7 +119,7 @@
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:72:7)\n    at processImmediate (node:internal/timers:464:21)",
@@ -149,38 +140,14 @@
   "pending": [],
   "failures": [
     {
-      "title": "should return a new array containing the first two drivers from the passed-in array",
-      "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
+      "title": "has the `returnFirstTwoDrivers` function to as its first element",
+      "fullTitle": "index.js selectingDrivers has the `returnFirstTwoDrivers` function to as its first element",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to deeply equal [ 'Sally', 'Bob' ]",
+        "message": "expected undefined to deeply equal [Function: returnFirstTwoDrivers]",
         "showDiff": true,
-        "expected": [
-          "Sally",
-          "Bob"
-        ],
-        "stack": "AssertionError: expected undefined to deeply equal [ 'Sally', 'Bob' ]\n    at Context.<anonymous> (test/indexTest.js:10:49)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "should return an array of the last two drivers",
-      "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: returnLastTwoDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:16:7)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "returnLastTwoDrivers is not defined"
-      }
-    },
-    {
-      "title": "has the `returnFirstTwoDrivers` function to as its first element",
-      "fullTitle": "index.js selectingDrivers has the `returnFirstTwoDrivers` function to as its first element",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:22:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "stack": "AssertionError: expected undefined to deeply equal [Function: returnFirstTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:22:38)\n    at processImmediate (node:internal/timers:464:21)"
       }
     },
     {
@@ -189,8 +156,9 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:26:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "message": "expected undefined to deeply equal [Function: returnLastTwoDrivers]",
+        "showDiff": true,
+        "stack": "AssertionError: expected undefined to deeply equal [Function: returnLastTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:26:38)\n    at processImmediate (node:internal/timers:464:21)"
       }
     },
     {
@@ -199,8 +167,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: selectingDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:30:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers is not defined"
+        "stack": "TypeError: selectingDrivers[0] is not a function\n    at Context.<anonymous> (test/indexTest.js:30:33)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "selectingDrivers[0] is not a function"
       }
     },
     {
@@ -246,7 +214,7 @@
     {
       "title": "is a function",
       "fullTitle": "index.js fareTripler() is a function",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: fareTripler is not defined\n    at Context.<anonymous> (test/indexTest.js:62:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -266,7 +234,7 @@
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:72:7)\n    at processImmediate (node:internal/timers:464:21)",
@@ -284,5 +252,20 @@
       }
     }
   ],
-  "passes": []
+  "passes": [
+    {
+      "title": "should return a new array containing the first two drivers from the passed-in array",
+      "fullTitle": "index.js returnFirstTwoDrivers() should return a new array containing the first two drivers from the passed-in array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return an array of the last two drivers",
+      "fullTitle": "index.js returnLastTwoDrivers() should return an array of the last two drivers",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
