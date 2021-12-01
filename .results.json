@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 11,
-    "start": "2021-12-01T03:54:50.789Z",
-    "end": "2021-12-01T03:54:51.140Z",
-    "duration": 351
+    "start": "2021-12-01T04:07:48.970Z",
+    "end": "2021-12-01T04:07:49.238Z",
+    "duration": 268
   },
   "tests": [
     {
@@ -27,12 +27,11 @@
     {
       "title": "has the `returnFirstTwoDrivers` function to as its first element",
       "fullTitle": "index.js selectingDrivers has the `returnFirstTwoDrivers` function to as its first element",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to deeply equal [Function: returnFirstTwoDrivers]",
-        "showDiff": true,
-        "stack": "AssertionError: expected undefined to deeply equal [Function: returnFirstTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:22:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:22:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '0')"
       }
     },
     {
@@ -41,9 +40,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to deeply equal [Function: returnLastTwoDrivers]",
-        "showDiff": true,
-        "stack": "AssertionError: expected undefined to deeply equal [Function: returnLastTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:26:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "stack": "TypeError: Cannot read properties of undefined (reading '1')\n    at Context.<anonymous> (test/indexTest.js:26:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '1')"
       }
     },
     {
@@ -52,8 +50,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: selectingDrivers[0] is not a function\n    at Context.<anonymous> (test/indexTest.js:30:33)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers[0] is not a function"
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:30:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '0')"
       }
     },
     {
@@ -99,7 +97,7 @@
     {
       "title": "is a function",
       "fullTitle": "index.js fareTripler() is a function",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: fareTripler is not defined\n    at Context.<anonymous> (test/indexTest.js:62:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -119,7 +117,7 @@
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:72:7)\n    at processImmediate (node:internal/timers:464:21)",
@@ -142,12 +140,11 @@
     {
       "title": "has the `returnFirstTwoDrivers` function to as its first element",
       "fullTitle": "index.js selectingDrivers has the `returnFirstTwoDrivers` function to as its first element",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to deeply equal [Function: returnFirstTwoDrivers]",
-        "showDiff": true,
-        "stack": "AssertionError: expected undefined to deeply equal [Function: returnFirstTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:22:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:22:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '0')"
       }
     },
     {
@@ -156,9 +153,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to deeply equal [Function: returnLastTwoDrivers]",
-        "showDiff": true,
-        "stack": "AssertionError: expected undefined to deeply equal [Function: returnLastTwoDrivers]\n    at Context.<anonymous> (test/indexTest.js:26:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "stack": "TypeError: Cannot read properties of undefined (reading '1')\n    at Context.<anonymous> (test/indexTest.js:26:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '1')"
       }
     },
     {
@@ -167,8 +163,8 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: selectingDrivers[0] is not a function\n    at Context.<anonymous> (test/indexTest.js:30:33)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "selectingDrivers[0] is not a function"
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (test/indexTest.js:30:30)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "Cannot read properties of undefined (reading '0')"
       }
     },
     {
@@ -214,7 +210,7 @@
     {
       "title": "is a function",
       "fullTitle": "index.js fareTripler() is a function",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: fareTripler is not defined\n    at Context.<anonymous> (test/indexTest.js:62:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -234,7 +230,7 @@
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
       "fullTitle": "index.js selectDifferentDrivers(arrayOfDrivers, function) returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: selectDifferentDrivers is not defined\n    at Context.<anonymous> (test/indexTest.js:72:7)\n    at processImmediate (node:internal/timers:464:21)",
